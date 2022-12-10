@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fieldValidation() {
+
+var name = document.forms['RegForm']['Name'].value;
+var address = document.forms['RegForm']['Address'].value;
+var email = document.forms['RegForm']['EMail'].value;
+var password = document.forms['RegForm']['Password'].value;
+var telephone = document.forms['RegForm']['Telephone'].value;
+var job = document.forms['RegForm']['Job'].value;
+var comment = document.forms['RegForm']['Comment'].value;
+var fullName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+var phnFormat = /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/;
+
+if (name === '') {
+  alert('Please enter your name.'); 
+  return false;
+}
+
+if (!fullName.test(name)) {
+  alert('Please make sure we have your full name.');
+  return false;
+}
+
+if (address === '') { 
+  alert('Please enter your address.'); 
+  return false; 
+} 
+
+if (email === '') { 
+  alert('Please enter your e-mail address.'); 
+  return false; 
+} 
+
+if (password === '') { 
+  alert('Please enter a password.'); 
+  return false; 
+}   
+
+if (telephone === '') { 
+  alert('Please enter your telephone number.'); 
+  return false; 
+}
+
+if (!phnFormat.test(telephone)) {
+  alert('Please enter your phone number in the following format: (123) 555-1212)');
+  return false;
+}
+
+if (job.value === '') { 
+  alert('Please select a job choice.'); 
+  return false; 
+} 
+
+if (comment.value === '') { 
+  alert('Please enter a comment.'); 
+  return false; 
+}
+  return true;
+}
+        </script>
+        
+    </body>
+</html>
