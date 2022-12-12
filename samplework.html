@@ -7,7 +7,7 @@
     <body>
         <div class="maindiv">
             <div class="firstpart">
-                <form action="/action_page.php">
+                <form>
                 <div class="total">
                  <img class="img" src="https://fusetheme.com/static/assets/images/fuse.svg">   
                  <br>
@@ -20,12 +20,12 @@
                 <br>
                 <label class="d">Email address</label>
                 <br>
-                <input placeholder="dfgbg.brain@company.com" class="e" type="email" id="inp1" name="email">
+                <input placeholder="dfgbg.brain@company.com" class="e" type="email" id="inp1" id="email" name="email">
                 <br>
                 <br>
                 <label class="f">Password</label>
                 <br>
-                <input class="g" placeholder="........." type="password" id="inp2">
+                <input class="g" placeholder="........." type="password" name="password" id="password">
                 <br>
                 <br>
                 <input type="checkbox">
@@ -33,14 +33,14 @@
                 <a class="j">Forgot password?</a>
                 <br>
                 <br>
-                <input type="submit" class="k" onclick="clicka()">
+                <input type="submit" value="submit" id="submit" class="k" onclick="clicka()">
                 </form>
                 
                 <script>
                     function clicka(){
-                        var input1=document.getElementById("inp1").value
-                        var input2=document.getElementById("inp2").value
-                       // alert( "email id is :"+input1  +"\n"  + "password is:"+input2)
+                        var input1=document.getElementById("email").value
+                        var input2=document.getElementById("password").value
+                        alert( "email id is :"+email  +"\n"  + "password is:"+password)
                     }
                 </script>
                 <br>
