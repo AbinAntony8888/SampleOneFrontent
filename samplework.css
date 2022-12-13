@@ -53,12 +53,11 @@ body{
     left: 68%;
 }
 .k{
-    background-color: rgb(4, 4, 141);
-    color: #fff;
+    background-color: blue;
     border-radius: 50px;
     height: 40px;
     width: 350px;
-    border-color: rgb(4, 4, 141);
+    border-color: rgb(4, 141, 82);
 }
 .l{
 text-align: centere;
