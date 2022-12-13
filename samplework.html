@@ -19,7 +19,7 @@
                 <br>
                 <label class="d">Email address</label>
                 <br>
-                <input placeholder="dfgbg.brain@company.com" class="e" type="email" id="inp1" >
+                <input placeholder="dfgbg.brain@company.com" class="e" type="email" id="email" name="email">
                 <br>
                 <br>
                 <label class="f">Password</label>
@@ -32,12 +32,12 @@
                 <a class="j">Forgot password?</a>
                 <br>
                 <br>
-                <button class="k" onclick="clicka()">Sign in</button>
+                <input type="submit" class="k" value="submit"  id="submit" onclick="clicka()">
                 <script>
                     function clicka(){
-                        var input1=document.getElementById("inp1").value
+                        var input1=document.getElementById("email").value
                         var input2=document.getElementById("inp2").value
-                        alert( "email id is :"+input1  +"\n"  + "password is:"+input2)
+                        alert( "email id is :"+email  +"\n"  + "password is:"+input2)
                     }
                 </script>
                 <br>
